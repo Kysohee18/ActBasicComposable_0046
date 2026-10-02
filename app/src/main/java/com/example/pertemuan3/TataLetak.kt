@@ -1,11 +1,10 @@
-package com.example.pertemuan3.ui.theme
+package com.example.pertemuan3
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
@@ -51,3 +50,25 @@ fun TataletakBox(modifier: Modifier) {
         Text(text = "Coloumn 2")
     }
 }
+
+@Composable
+fun TataletakColumnRow(modifier: Modifier){
+    Column()
+    {
+        Row(Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly) {
+            Text(text = "Komponen1Baris1")
+            Text(text = "Komponen2Baris1")
+            Text(text = "Komponen3Baris1")
+        }
+    Row(
+        modifier = modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceEvenly
+    ) {
+        Text(text = "Komponen1Baris2")
+        Text(text = "Komponen2Baris2")
+        Text(text = "Komponen3Baris2")
+        }
+    }
+}
+
