@@ -36,7 +36,7 @@ fun LoginBackground(modifier: Modifier){
             modifier = modifier.matchParentSize()
         )
         Column(modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.SpaceAround)
+            verticalArrangement = Arrangement.Center)
         {
             //Colum Header
             Column(modifier = Modifier.fillMaxWidth(),
@@ -50,19 +50,23 @@ fun LoginBackground(modifier: Modifier){
                 Text(text="ini adalah halaman login",
                     color =Color.White)
 
-
+                Spacer(modifier =Modifier.height(120.dp))
             }
+
             //kolom tengah
             Column(modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally)
             {Image(painter = painterResource(id = R.drawable.logoumy),
                 contentDescription = null,
                 modifier =Modifier.size(150.dp)
+
+
             )}
             //
             Column(modifier = Modifier.fillMaxWidth(),
                 horizontalAlignment = Alignment.CenterHorizontally)
             {
+                Spacer(modifier =Modifier.height(50.dp))
                 Text(text ="Nama",
                     color = Color.Green,
                     fontSize = 27.sp)
@@ -71,10 +75,11 @@ fun LoginBackground(modifier: Modifier){
                     fontSize = 20.sp)
 
                 Text(text="20240140047",
-                    color =Color.Black,
+                    color =Color.White,
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold)
-                Spacer(modifier =Modifier.height(12.dp))
+
+                Spacer(modifier =Modifier.height(25.dp))
                 Image(painter = painterResource(id = R.drawable.kucing),
                     contentDescription = null,
                     modifier =Modifier
