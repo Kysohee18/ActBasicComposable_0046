@@ -1,5 +1,6 @@
 package com.example.pertemuan3
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -15,14 +16,15 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.pertemuan3.ui.theme.Pertemuan3Theme
 
 class MainActivity : ComponentActivity() {
+    @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(saveInstanceState: Bundle?){
         super.onCreate(saveInstanceState)
         setContent {
             Pertemuan3Theme() {}
-            Scaffold(modifier = Modifier.fillMaxSize()) { innerpadding ->
-                TataletakBoxColumnRow(
-                    modifier =  Modifier.padding(paddingValues = innerpadding)
-                )
+            Scaffold() {
+                LoginBackground(
+                    modifier =  Modifier)
+
             }
         }
     }
