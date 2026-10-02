@@ -105,7 +105,7 @@ fun TataletakRowColumn(modifier: Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier){
-    val gambar = painterResource(id = R.drawable.notasibalok)
+    val gambar = painterResource(id = R.drawable.memeprabowo)
     Column() {
         Box(
             modifier = modifier
@@ -144,9 +144,9 @@ fun TataletakBoxColumnRow(modifier: Modifier){
             Image(painter = gambar,
                 contentDescription = null,
                 contentScale = ContentScale.Fit )
-            Text(text = "My music",
+            Text(text = "hmm teddy",
                 fontSize = 50.sp,
-                color = Color.Red,
+                color = Color.Green,
                 fontWeight = FontWeight.Bold,
                 fontFamily= FontFamily.Cursive,
                 modifier = Modifier.align(
